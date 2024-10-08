@@ -11,8 +11,10 @@ using System.Windows.Forms;
 
 namespace Supermarket_mvp.Views
 {
+    
     public partial class PayModeView : Form , IPayModeView
     {
+        private static PayModeView instance;
         private bool isEdit;
         private bool isSuccessful;
         private string message;
@@ -83,10 +85,29 @@ namespace Supermarket_mvp.Views
         {
             DgPayMode.DataSource = payModeList;
         }
-
+        
+        public static PayModeView GetInstance()
+        {
+            if (instance == null || instance.IsDisposed)
+            {
+                instance = new PayModeView();
+            }
+            else
+            {
+                if (instance.WindowState == FormWindowState.Maximized)
+                {
+                    instance.WindowState = FormWindowState.Normal;
+                }
+                instance.BringToFront();
+            }
+            return instance;
+        }
         public void show()
         {
             this.Visible = true;
         }
+       
+
+       
     }
 }

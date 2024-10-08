@@ -53,3 +53,4 @@ D:\Archivos VSCM\Supermarket-mvp\Supermarket-mvp\bin\Debug\net8.0-windows\runtim
 D:\Archivos VSCM\Supermarket-mvp\Supermarket-mvp\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
 D:\Archivos VSCM\Supermarket-mvp\Supermarket-mvp\obj\Debug\net8.0-windows\Supermarket-mvp.csproj.AssemblyReference.cache
 D:\Archivos VSCM\Supermarket-mvp\Supermarket-mvp\obj\Debug\net8.0-windows\Supermar.FBD2E1F5.Up2Date
+D:\Archivos VSCM\Supermarket-mvp\Supermarket-mvp\obj\Debug\net8.0-windows\Supermarket_mvp.Views.MainView.resources
