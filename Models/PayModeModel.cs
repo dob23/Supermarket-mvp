@@ -21,11 +21,6 @@ namespace Supermarket_mvp.Models
         [StringLength(200, MinimumLength =3 , ErrorMessage ="Pay Mode Observation must be between 3 and 200 characteres")]
         public string Observation { get; set; }
 
-        public PayModeModel(int id, string name, string observation)
-        {
-            Id = id;
-            Name = name;
-            Observation = observation;
-        }
+       
     }
 }

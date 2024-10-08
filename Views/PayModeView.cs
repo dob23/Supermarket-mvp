@@ -86,7 +86,7 @@ namespace Supermarket_mvp.Views
 
         public void show()
         {
-            throw new NotImplementedException();
+            this.Visible = true;
         }
     }
 }

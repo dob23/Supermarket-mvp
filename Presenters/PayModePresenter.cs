@@ -77,6 +77,7 @@ namespace Supermarket_mvp.Presenters
             {
                 payModeList = repository.GetAll();
             }
+            payModeBindingSource.DataSource = payModeList;
         }
     }
 }
