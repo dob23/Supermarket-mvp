@@ -33,8 +33,8 @@
             label1 = new Label();
             tabControl1 = new TabControl();
             tabPagePayModeLIst = new TabPage();
-            button2 = new Button();
-            button1 = new Button();
+            BtnClose = new Button();
+            BtnDelete = new Button();
             BtnEdit = new Button();
             BtnNew = new Button();
             DgPayMode = new DataGridView();
@@ -101,8 +101,8 @@
             // 
             // tabPagePayModeLIst
             // 
-            tabPagePayModeLIst.Controls.Add(button2);
-            tabPagePayModeLIst.Controls.Add(button1);
+            tabPagePayModeLIst.Controls.Add(BtnClose);
+            tabPagePayModeLIst.Controls.Add(BtnDelete);
             tabPagePayModeLIst.Controls.Add(BtnEdit);
             tabPagePayModeLIst.Controls.Add(BtnNew);
             tabPagePayModeLIst.Controls.Add(DgPayMode);
@@ -117,28 +117,31 @@
             tabPagePayModeLIst.Text = "Pay Mode List";
             tabPagePayModeLIst.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // BtnClose
             // 
-            button2.Image = Properties.Resources.cerrar;
-            button2.Location = new Point(619, 232);
-            button2.Name = "button2";
-            button2.Size = new Size(167, 48);
-            button2.TabIndex = 7;
-            button2.TextImageRelation = TextImageRelation.TextAboveImage;
-            button2.UseVisualStyleBackColor = true;
+            BtnClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            BtnClose.Image = Properties.Resources.cerrar;
+            BtnClose.Location = new Point(619, 232);
+            BtnClose.Name = "BtnClose";
+            BtnClose.Size = new Size(167, 48);
+            BtnClose.TabIndex = 7;
+            BtnClose.TextImageRelation = TextImageRelation.TextAboveImage;
+            BtnClose.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // BtnDelete
             // 
-            button1.Image = Properties.Resources.delete;
-            button1.Location = new Point(619, 178);
-            button1.Name = "button1";
-            button1.Size = new Size(167, 48);
-            button1.TabIndex = 6;
-            button1.TextImageRelation = TextImageRelation.TextAboveImage;
-            button1.UseVisualStyleBackColor = true;
+            BtnDelete.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            BtnDelete.Image = Properties.Resources.delete;
+            BtnDelete.Location = new Point(619, 178);
+            BtnDelete.Name = "BtnDelete";
+            BtnDelete.Size = new Size(167, 48);
+            BtnDelete.TabIndex = 6;
+            BtnDelete.TextImageRelation = TextImageRelation.TextAboveImage;
+            BtnDelete.UseVisualStyleBackColor = true;
             // 
             // BtnEdit
             // 
+            BtnEdit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnEdit.Image = Properties.Resources.edit;
             BtnEdit.Location = new Point(619, 124);
             BtnEdit.Name = "BtnEdit";
@@ -149,6 +152,7 @@
             // 
             // BtnNew
             // 
+            BtnNew.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnNew.Image = Properties.Resources._new;
             BtnNew.Location = new Point(617, 70);
             BtnNew.Name = "BtnNew";
@@ -161,6 +165,7 @@
             // 
             DgPayMode.AllowUserToAddRows = false;
             DgPayMode.AllowUserToDeleteRows = false;
+            DgPayMode.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             DgPayMode.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DgPayMode.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DgPayMode.Location = new Point(16, 70);
@@ -171,6 +176,7 @@
             // 
             // BtnSearch
             // 
+            BtnSearch.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnSearch.Image = Properties.Resources.search_small;
             BtnSearch.Location = new Point(574, 18);
             BtnSearch.Name = "BtnSearch";
@@ -181,6 +187,7 @@
             // 
             // TxtSearch
             // 
+            TxtSearch.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             TxtSearch.Location = new Point(16, 41);
             TxtSearch.Name = "TxtSearch";
             TxtSearch.PlaceholderText = "Data to Search";
@@ -317,8 +324,8 @@
         private Label label2;
         private Button BtnNew;
         private DataGridView DgPayMode;
-        private Button button2;
-        private Button button1;
+        private Button BtnClose;
+        private Button BtnDelete;
         private Button BtnEdit;
         private Button BtnSave;
         private TextBox TxtPayModeObservation;

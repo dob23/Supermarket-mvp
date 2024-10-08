@@ -15,6 +15,8 @@ namespace Supermarket_mvp.Views
         {
             InitializeComponent();
             BtnPayMode.Click += delegate { ShowPayModeView?.Invoke(this, EventArgs.Empty); };
+            this.IsMdiContainer = true;
+            BtnExit.Click += delegate { this.Close(); };
         }
 
         public event EventHandler ShowPayModeView;
