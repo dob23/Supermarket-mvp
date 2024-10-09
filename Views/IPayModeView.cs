@@ -8,9 +8,9 @@ namespace Supermarket_mvp.Views
 {
     internal interface IPayModeView
     {
-        string ModeId { get; set; }
-        string ModeName { get; set; }
-        string ModeDescription { get; set; }
+        string PayModeId { get; set; }
+        string PayModeName { get; set; }
+        string PayModeObservation { get; set; }
 
         string SearchValue { get; set; }
         bool IsEdit { get; set; }

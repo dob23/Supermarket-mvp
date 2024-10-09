@@ -42,7 +42,7 @@
             TxtSearch = new TextBox();
             label2 = new Label();
             tabPagePayModelDetail = new TabPage();
-            button3 = new Button();
+            BtnCancel = new Button();
             TxtPayModeObservation = new TextBox();
             label5 = new Label();
             TxtPayModeName = new TextBox();
@@ -205,7 +205,7 @@
             // 
             // tabPagePayModelDetail
             // 
-            tabPagePayModelDetail.Controls.Add(button3);
+            tabPagePayModelDetail.Controls.Add(BtnCancel);
             tabPagePayModelDetail.Controls.Add(TxtPayModeObservation);
             tabPagePayModelDetail.Controls.Add(label5);
             tabPagePayModelDetail.Controls.Add(TxtPayModeName);
@@ -221,14 +221,14 @@
             tabPagePayModelDetail.Text = "Pay Mode Detail";
             tabPagePayModelDetail.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // BtnCancel
             // 
-            button3.Image = Properties.Resources.cancel;
-            button3.Location = new Point(173, 246);
-            button3.Name = "button3";
-            button3.Size = new Size(83, 42);
-            button3.TabIndex = 7;
-            button3.UseVisualStyleBackColor = true;
+            BtnCancel.Image = Properties.Resources.cancel;
+            BtnCancel.Location = new Point(173, 246);
+            BtnCancel.Name = "BtnCancel";
+            BtnCancel.Size = new Size(83, 42);
+            BtnCancel.TabIndex = 7;
+            BtnCancel.UseVisualStyleBackColor = true;
             // 
             // TxtPayModeObservation
             // 
@@ -278,8 +278,11 @@
             // 
             TxtPayModeId.Location = new Point(48, 48);
             TxtPayModeId.Name = "TxtPayModeId";
+            TxtPayModeId.ReadOnly = true;
             TxtPayModeId.Size = new Size(173, 23);
             TxtPayModeId.TabIndex = 1;
+            TxtPayModeId.Text = "0";
+            TxtPayModeId.TextAlign = HorizontalAlignment.Right;
             // 
             // BtnSave
             // 
@@ -334,6 +337,6 @@
         private Label label4;
         private Label label3;
         private TextBox TxtPayModeId;
-        private Button button3;
+        private Button BtnCancel;
     }
 }
