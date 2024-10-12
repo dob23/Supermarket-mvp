@@ -119,6 +119,7 @@
             // 
             // BtnClose
             // 
+            BtnClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnClose.BackgroundImage = Properties.Resources.cerrar;
             BtnClose.BackgroundImageLayout = ImageLayout.Center;
             BtnClose.Location = new Point(605, 276);
@@ -129,6 +130,7 @@
             // 
             // BtnDelete
             // 
+            BtnDelete.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnDelete.BackgroundImage = Properties.Resources.delete;
             BtnDelete.BackgroundImageLayout = ImageLayout.Center;
             BtnDelete.Location = new Point(605, 208);
@@ -139,6 +141,7 @@
             // 
             // BtnEdit
             // 
+            BtnEdit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnEdit.BackgroundImage = Properties.Resources.edit;
             BtnEdit.BackgroundImageLayout = ImageLayout.Center;
             BtnEdit.Location = new Point(605, 144);
@@ -149,6 +152,7 @@
             // 
             // BtnNew
             // 
+            BtnNew.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnNew.BackgroundImage = Properties.Resources._new;
             BtnNew.BackgroundImageLayout = ImageLayout.Center;
             BtnNew.Location = new Point(605, 79);
@@ -159,6 +163,7 @@
             // 
             // BtnSearch
             // 
+            BtnSearch.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnSearch.BackgroundImage = Properties.Resources.search_small;
             BtnSearch.BackgroundImageLayout = ImageLayout.Center;
             BtnSearch.Location = new Point(540, 12);
@@ -191,6 +196,7 @@
             // 
             // TxtSearch
             // 
+            TxtSearch.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             TxtSearch.Location = new Point(17, 39);
             TxtSearch.Name = "TxtSearch";
             TxtSearch.PlaceholderText = "Search Pay Mode ";
