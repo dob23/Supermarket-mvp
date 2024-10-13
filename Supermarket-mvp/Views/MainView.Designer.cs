@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            BtnProducts = new Button();
             BtnExit = new Button();
             BtnPayMode = new Button();
             pictureBox1 = new PictureBox();
-            BtnProducts = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -48,6 +48,16 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(150, 450);
             panel1.TabIndex = 0;
+            // 
+            // BtnProducts
+            // 
+            BtnProducts.BackgroundImage = Properties.Resources.products;
+            BtnProducts.BackgroundImageLayout = ImageLayout.Zoom;
+            BtnProducts.Location = new Point(3, 282);
+            BtnProducts.Name = "BtnProducts";
+            BtnProducts.Size = new Size(147, 81);
+            BtnProducts.TabIndex = 3;
+            BtnProducts.UseVisualStyleBackColor = true;
             // 
             // BtnExit
             // 
@@ -79,16 +89,6 @@
             pictureBox1.Size = new Size(147, 66);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            // 
-            // BtnProducts
-            // 
-            BtnProducts.BackgroundImage = Properties.Resources.products;
-            BtnProducts.BackgroundImageLayout = ImageLayout.Zoom;
-            BtnProducts.Location = new Point(0, 168);
-            BtnProducts.Name = "BtnProducts";
-            BtnProducts.Size = new Size(147, 81);
-            BtnProducts.TabIndex = 3;
-            BtnProducts.UseVisualStyleBackColor = true;
             // 
             // MainView
             // 
