@@ -51,7 +51,7 @@ namespace Supermarket_mvp.Presenters
         private void SaveCustomer(object? sender, EventArgs e)
         {
             var customer = new CustomerModel();
-            customer.Customer_Id = Convert.ToInt32(view.Customer_Id);
+            customer.Id = Convert.ToInt32(view.Customer_Id);
             customer.First_Name = view.First_Name;
             customer.Last_Name = view.Last_Name;
             customer.Document_Number = view.Document_Number;
@@ -110,7 +110,7 @@ namespace Supermarket_mvp.Presenters
             try
             {
                 var customer = (CustomerModel)customerBindingSource.Current;
-                repository.CustomersDelete(customer.Customer_Id);
+                repository.CustomersDelete(customer.Id);
                 view.IsSuccessful = true;
                 view.Message = "Customer deleted Successfuly";
                 LoadAllCustomerList();
@@ -126,7 +126,7 @@ namespace Supermarket_mvp.Presenters
         {
             var customer = (CustomerModel)customerBindingSource.Current;
 
-            view.Customer_Id = customer.Customer_Id.ToString();
+            view.Customer_Id = customer.Id.ToString();
             view.First_Name = customer.First_Name;
             view.Last_Name = customer.Last_Name;
             view.Document_Number = customer.Document_Number;

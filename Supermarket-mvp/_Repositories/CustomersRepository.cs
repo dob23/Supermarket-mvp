@@ -70,7 +70,7 @@ namespace Supermarket_mvp._Repositories
                 command.Parameters.Add("@Birthday", SqlDbType.Date).Value = customerModel.Birthday;
                 command.Parameters.Add("@Phone_Number", SqlDbType.NVarChar).Value = customerModel.Phone_Number;
                 command.Parameters.Add("@Email", SqlDbType.NVarChar).Value = customerModel.Email;
-                command.Parameters.Add("@Customer_Id", SqlDbType.Int).Value = customerModel.Customer_Id;
+                command.Parameters.Add("@Customer_Id", SqlDbType.Int).Value = customerModel.Id;
                 command.ExecuteNonQuery();
             }
         }
@@ -89,7 +89,7 @@ namespace Supermarket_mvp._Repositories
                     while (reader.Read())
                     {
                         var customerModel = new CustomerModel();
-                        customerModel.Customer_Id = (int)reader["Customer_Id"];
+                        customerModel.Id = (int)reader["Customer_Id"];
                         customerModel.First_Name = reader["First_Name"].ToString();
                         customerModel.Last_Name = reader["Last_Name"].ToString(); 
                         customerModel.Document_Number = reader["Document_Number"].ToString();
@@ -123,7 +123,7 @@ namespace Supermarket_mvp._Repositories
                     while (reader.Read())
                     {
                         var customerModel = new CustomerModel();
-                        customerModel.Customer_Id = (int)reader["Customer_Id"];
+                        customerModel.Id = (int)reader["Customer_Id"];
                         customerModel.First_Name = reader["First_Name"].ToString();
                         customerModel.Last_Name = reader["Last_Name"].ToString();  
                         customerModel.Document_Number = reader["Document_Number"].ToString();
