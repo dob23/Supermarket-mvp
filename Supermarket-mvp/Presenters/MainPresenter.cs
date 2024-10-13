@@ -19,12 +19,19 @@ namespace Supermarket_mvp.Presenters
             this.sqlConnectionString = sqlConnectionString;
 
             this._mainView.ShowPayModeView += ShowPayModeView;
+            this._mainView.ShowProductView += ShowProductsView;
         }
 
         private void ShowPayModeView(object sender, EventArgs e) {
             IPayModeView view = PayModeView.GetInstance((MainView)_mainView);
             IPayModeRepository repository = new PayModeRepository(sqlConnectionString);
             new PayModePresenter(view, repository);
+        }
+        private void ShowProductsView(object sender, EventArgs e)
+        { 
+            IProductsView view = ProductsView.GetInstance((MainView)_mainView);
+            IProductsRepository repository = new ProductRepository(sqlConnectionString);
+            new ProductsPresenter(view, repository);
         }
     }
 }
