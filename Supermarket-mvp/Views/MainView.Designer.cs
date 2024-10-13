@@ -33,12 +33,14 @@
             BtnExit = new Button();
             BtnPayMode = new Button();
             pictureBox1 = new PictureBox();
+            BtnCustomers = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.Controls.Add(BtnCustomers);
             panel1.Controls.Add(BtnProducts);
             panel1.Controls.Add(BtnExit);
             panel1.Controls.Add(BtnPayMode);
@@ -90,6 +92,16 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+            // BtnCustomers
+            // 
+            BtnCustomers.BackgroundImage = Properties.Resources.providers;
+            BtnCustomers.BackgroundImageLayout = ImageLayout.Zoom;
+            BtnCustomers.Location = new Point(3, 159);
+            BtnCustomers.Name = "BtnCustomers";
+            BtnCustomers.Size = new Size(147, 81);
+            BtnCustomers.TabIndex = 4;
+            BtnCustomers.UseVisualStyleBackColor = true;
+            // 
             // MainView
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -112,5 +124,6 @@
         private PictureBox pictureBox1;
         private Button BtnExit;
         private Button BtnProducts;
+        private Button BtnCustomers;
     }
 }
